@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Robots | Team 7415 Jaguar Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .featured { display:grid; grid-template-columns:1.3fr 1fr; gap:4rem; align-items:center; padding-top:3rem; }
+    .feat-photo { width:100%; aspect-ratio:16/10; background:var(--surface2); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .feat-lbl { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:5rem; color:var(--white); opacity:0.07; letter-spacing:-0.04em; }
+    .feat-bar { position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--red); }
+    .feat-badge { display:inline-block; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; background:var(--red); color:var(--white); padding:0.28rem 0.75rem; margin-bottom:0.75rem; clip-path:polygon(4px 0%,100% 0%,calc(100% - 4px) 100%,0% 100%); }
+    .feat-season { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--red-bright); margin-bottom:0.35rem; }
+    .feat-name { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:clamp(2.5rem,5vw,3.8rem); line-height:0.9; text-transform:uppercase; margin-bottom:1rem; }
+    .feat-desc { color:var(--silver); line-height:1.8; font-size:0.95rem; margin-bottom:0.75rem; }
+    .spec-table { width:100%; border-collapse:collapse; margin-top:1.2rem; }
+    .spec-table tr { border-top:1px solid var(--line); }
+    .spec-table td { padding:0.6rem 0; font-size:0.84rem; }
+    .spec-table td:first-child { font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--silver); width:40%; }
+    .spec-table td:last-child { color:var(--silver-light); }
+
+    .robots-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .rcard { background:var(--dark); overflow:hidden; transition:background 0.25s; }
+    .rcard:hover { background:var(--surface2); }
+    .rphoto { width:100%; aspect-ratio:4/3; background:var(--surface); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .rphoto-txt { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:3rem; color:var(--white); opacity:0.1; letter-spacing:-0.03em; }
+    .rbar { position:absolute; bottom:0; left:0; right:0; height:2px; background:var(--red); transform:scaleX(0); transform-origin:left; transition:transform 0.4s; }
+    .rcard:hover .rbar { transform:scaleX(1); }
+    .rbody { padding:1.4rem 1.5rem; }
+    .rseason { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--red-bright); margin-bottom:0.3rem; }
+    .rname { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.5rem; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
+    .rdesc { font-size:0.83rem; color:var(--silver); line-height:1.6; }
+
+    @media (max-width:900px) {
+      .featured { grid-template-columns:1fr; gap:2.5rem; }
+      .robots-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-header">
+  <p class="eyebrow">Robot Showcase</p>
+  <h1>The <span class="r">Machines.</span></h1>
+</div>
+
+<!-- FEATURED: SALLY -->
+<div class="section">
+  <div class="wrap">
+    <div class="featured reveal">
+      <div class="feat-photo"><div class="feat-lbl">2025</div><div class="feat-bar"></div></div>
+      <div>
+        <span class="feat-badge">Current Robot</span>
+        <div class="feat-season">2025 · Reefscape</div>
+        <div class="feat-name">Sally</div>
+        <p class="feat-desc">Add a description of Sally here. Describe the game challenge, key mechanisms, what makes her special, and competition highlights.</p>
+        <table class="spec-table">
+          <tr><td>Game</td><td>Reefscape 2025</td></tr>
+          <tr><td>Drivetrain</td><td>Swerve Drive</td></tr>
+          <tr><td>Weight</td><td>Add weight</td></tr>
+          <tr><td>Key Mechanisms</td><td>Add mechanisms</td></tr>
+          <tr><td>Best Result</td><td>Add best result</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAST ROBOTS -->
+<div class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Past Seasons</p>
+      <h2 class="sh">Previous <span class="r">Robots.</span></h2>
+    </div>
+    <br>
+    <div class="robots-grid reveal">
+      <div class="rcard">
+        <div class="rphoto"><div class="rphoto-txt">2024</div><div class="rbar"></div></div>
+        <div class="rbody">
+          <div class="rseason">2024 · Crescendo</div>
+          <div class="rname">Master Shifu</div>
+          <div class="rdesc">Add a description of Master Shifu and your 2024 competition highlights.</div>
+        </div>
+      </div>
+      <div class="rcard">
+        <div class="rphoto"><div class="rphoto-txt">2023</div><div class="rbar"></div></div>
+        <div class="rbody">
+          <div class="rseason">2023 · Charged Up</div>
+          <div class="rname">Add Robot Name</div>
+          <div class="rdesc">Add a description of your 2023 robot and competition highlights.</div>
+        </div>
+      </div>
+      <div class="rcard">
+        <div class="rphoto"><div class="rphoto-txt">2022</div><div class="rbar"></div></div>
+        <div class="rbody">
+          <div class="rseason">2022 · Rapid React</div>
+          <div class="rname">Add Robot Name</div>
+          <div class="rdesc">Add a description of your 2022 robot and competition highlights.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+</body>
+</html>

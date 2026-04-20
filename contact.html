@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact | Team 7415 Jaguar Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:5rem; align-items:start; padding-top:3rem; }
+    .contact-info p { color:var(--silver); font-size:0.95rem; line-height:1.8; margin-bottom:2rem; }
+    .clist { display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); margin-bottom:2rem; }
+    .crow { display:flex; align-items:center; gap:1rem; padding:1rem 1.2rem; background:var(--dark); text-decoration:none; transition:background 0.2s; }
+    .crow:hover { background:var(--surface2); }
+    .cicon { width:36px; height:36px; background:var(--red-dim); border:1px solid var(--red-border); display:grid; place-items:center; font-size:1rem; flex-shrink:0; }
+    .clabel { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--silver); margin-bottom:0.1rem; }
+    .cval { font-size:0.88rem; color:var(--silver-light); }
+
+    .socials-heading { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver); margin-bottom:0.8rem; }
+    .social-links { display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .sl-row { display:flex; align-items:center; gap:1rem; padding:0.9rem 1.2rem; background:var(--dark); text-decoration:none; transition:background 0.2s; }
+    .sl-row:hover { background:var(--surface2); }
+    .sl-icon { width:34px; height:34px; background:rgba(255,255,255,0.04); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--silver); transition:all 0.2s; }
+    .sl-row:hover .sl-icon { background:var(--red-dim); border-color:var(--red-border); color:var(--white); }
+    .sl-platform { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--white); }
+    .sl-handle { font-size:0.78rem; color:var(--silver); margin-top:0.05rem; }
+    .sl-arrow { margin-left:auto; color:var(--silver); font-size:0.8rem; }
+
+    .cform { display:flex; flex-direction:column; gap:1rem; }
+    .frow { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .fg { display:flex; flex-direction:column; gap:0.4rem; }
+    .fg label { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--silver); }
+    .fg input,.fg textarea,.fg select { background:var(--surface); border:1px solid var(--line); color:var(--white); padding:0.75rem 0.9rem; font-family:'Barlow',sans-serif; font-size:0.92rem; outline:none; width:100%; transition:border-color 0.2s; }
+    .fg input:focus,.fg textarea:focus,.fg select:focus { border-color:var(--red-bright); }
+    .fg textarea { resize:vertical; min-height:120px; }
+    .fg select option { background:var(--dark); }
+    .form-note { font-size:0.78rem; color:var(--silver); }
+
+    @media (max-width:900px) {
+      .contact-grid { grid-template-columns:1fr; gap:3rem; }
+      .frow { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-header">
+  <p class="eyebrow">Get In Touch</p>
+  <h1>Let's <span class="r">Connect.</span></h1>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info">
+          <p>Interested in sponsoring Team 7415, learning more about our work, or reaching out about a partnership? We'd love to hear from you.</p>
+        </div>
+        <div class="clist">
+          <div class="crow">
+            <div class="cicon">🏫</div>
+            <div><div class="clabel">School</div><div class="cval">deToledo High School, West Hills, CA</div></div>
+          </div>
+          <a href="mailto:team7415@detoledo.org" class="crow">
+            <div class="cicon">✉️</div>
+            <div><div class="clabel">Email</div><div class="cval">team7415@detoledo.org</div></div>
+          </a>
+          <a href="https://www.thebluealliance.com/team/7415" target="_blank" rel="noopener" class="crow">
+            <div class="cicon">🔗</div>
+            <div><div class="clabel">Blue Alliance</div><div class="cval">thebluealliance.com/team/7415</div></div>
+          </a>
+          <div class="crow">
+            <div class="cicon">⚒️</div>
+            <div><div class="clabel">Alliance</div><div class="cval">Team Anvil — SoCal FRC Collaboration</div></div>
+          </div>
+        </div>
+
+        <div class="socials-heading">Follow Us</div>
+        <div class="social-links">
+          <a href="https://instagram.com/team7415" target="_blank" rel="noopener" class="sl-row">
+            <div class="sl-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div><div class="sl-platform">Instagram</div><div class="sl-handle">Update with your @handle</div></div>
+            <span class="sl-arrow">↗</span>
+          </a>
+          <a href="https://github.com/team7415" target="_blank" rel="noopener" class="sl-row">
+            <div class="sl-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div><div class="sl-platform">GitHub</div><div class="sl-handle">Update with your GitHub URL</div></div>
+            <span class="sl-arrow">↗</span>
+          </a>
+          <a href="https://youtube.com/@team7415" target="_blank" rel="noopener" class="sl-row">
+            <div class="sl-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </div>
+            <div><div class="sl-platform">YouTube</div><div class="sl-handle">Update with your channel</div></div>
+            <span class="sl-arrow">↗</span>
+          </a>
+          <a href="https://www.thebluealliance.com/team/7415" target="_blank" rel="noopener" class="sl-row">
+            <div class="sl-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 7 22 17 12 22 2 17 2 7"/><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="7" x2="22" y2="7"/><line x1="2" y1="17" x2="22" y2="17"/></svg>
+            </div>
+            <div><div class="sl-platform">The Blue Alliance</div><div class="sl-handle">thebluealliance.com/team/7415</div></div>
+            <span class="sl-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form class="cform" onsubmit="subForm(event)">
+          <div class="frow">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="First"/></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Last"/></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="fg"><label>Organization</label><input type="text" placeholder="Company or organization (optional)"/></div>
+          <div class="fg">
+            <label>Reason for Contact</label>
+            <select>
+              <option value="">Select...</option>
+              <option>Sponsorship inquiry</option>
+              <option>Media / Press</option>
+              <option>General question</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>Message</label><textarea placeholder="Tell us what's on your mind..."></textarea></div>
+          <p class="form-note">We typically respond within a few business days.</p>
+          <button type="submit" class="btn btn-red" style="width:fit-content;margin-top:0.5rem" id="sbtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+<script>
+  function subForm(e) {
+    e.preventDefault();
+    const b = document.getElementById('sbtn');
+    b.textContent = 'Message Sent ✓'; b.style.background = '#1f5c30'; b.disabled = true;
+    setTimeout(() => { b.textContent = 'Send Message'; b.style.background = ''; b.disabled = false; }, 4000);
+  }
+</script>
+</body>
+</html>

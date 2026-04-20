@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Sponsors | Team 7415 Jaguar Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sponsors-intro { max-width:620px; color:var(--silver); line-height:1.8; font-size:1rem; padding:2.5rem 0 3.5rem; }
+
+    .tier-block { margin-bottom:3.5rem; }
+    .tier-header { display:flex; align-items:center; gap:1.2rem; margin-bottom:1.4rem; }
+    .tier-pill { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; padding:0.32rem 1rem; clip-path:polygon(4px 0%,100% 0%,calc(100% - 4px) 100%,0% 100%); white-space:nowrap; }
+    .tier-pill.founding { background:linear-gradient(135deg,#9B7B1A,#D4A820); color:#000; }
+    .tier-pill.gold { background:linear-gradient(135deg,#8C1A28,#B02233); color:#fff; }
+    .tier-pill.silver { background:var(--surface2); color:var(--silver-light); border:1px solid rgba(160,168,176,0.25); }
+    .tier-pill.bronze { background:transparent; color:var(--silver); border:1px solid var(--line); }
+    .tier-rule { flex:1; height:1px; background:var(--line); }
+
+    .sponsors-row { display:flex; flex-wrap:wrap; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .scard { background:var(--dark); flex:1; min-width:200px; padding:2.5rem 2rem; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem; transition:background 0.2s; }
+    .scard:hover { background:var(--surface2); }
+    .scard.founding-s { min-width:300px; padding:3.5rem 2.5rem; }
+
+    /* Sponsor wordmark styles */
+    .sp-logo { display:flex; flex-direction:column; align-items:center; gap:0.3rem; }
+
+    /* FEIT Electric */
+    .logo-feit { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2.2rem; letter-spacing:0.02em; text-transform:uppercase; color:var(--white); line-height:1; }
+    .logo-feit span { color:var(--red-bright); }
+    .logo-feit-sub { font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.7rem; letter-spacing:0.35em; text-transform:uppercase; color:rgba(255,255,255,0.45); }
+
+    /* DFF */
+    .logo-dff { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--silver-light); }
+
+    /* Last Anvil Innovations */
+    .logo-lai { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.3rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--silver-light); text-align:center; line-height:1.2; }
+
+    /* Haas */
+    .logo-haas { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--silver-light); }
+
+    /* Loaded Boards */
+    .logo-lb { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.4rem; letter-spacing:0.04em; text-transform:uppercase; color:var(--silver); }
+
+    .sp-tier-tag { font-size:0.7rem; color:var(--silver); letter-spacing:0.08em; opacity:0.7; }
+
+    /* CTA */
+    .become-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+    .become-text p { color:var(--silver); line-height:1.8; font-size:0.95rem; margin-bottom:1rem; }
+    .tier-list { display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .tier-row { background:var(--dark); padding:1.2rem 1.4rem; display:flex; align-items:center; gap:1rem; transition:background 0.2s; }
+    .tier-row:hover { background:var(--surface2); }
+    .tier-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .tier-dot.founding { background:var(--gold); }
+    .tier-dot.gold { background:var(--red-bright); }
+    .tier-dot.silver { background:var(--silver); }
+    .tier-dot.bronze { background:rgba(160,168,176,0.35); }
+    .tier-row-name { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); }
+    .tier-row-desc { font-size:0.8rem; color:var(--silver); }
+
+    @media (max-width:900px) { .become-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="page-header">
+  <p class="eyebrow">Our Partners</p>
+  <h1>Thank You,<br><span class="r">Sponsors.</span></h1>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <p class="sponsors-intro">Our sponsors make everything possible — from robot components and competition fees to travel and student development. Their investment directly shapes the future of our team and the students on it.</p>
+
+    <!-- FOUNDING -->
+    <div class="tier-block reveal">
+      <div class="tier-header">
+        <span class="tier-pill founding">Founding Sponsor</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sponsors-row">
+        <div class="scard founding-s">
+          <div class="sp-logo">
+            <div class="logo-feit"><span>FEIT</span> Electric</div>
+            <div class="logo-feit-sub">Founding Sponsor · Title Partner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOLD -->
+    <div class="tier-block reveal">
+      <div class="tier-header">
+        <span class="tier-pill gold">Gold Sponsors</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sponsors-row">
+        <div class="scard">
+          <div class="sp-logo">
+            <div class="logo-dff">DFF</div>
+            <div class="sp-tier-tag">Gold Sponsor</div>
+          </div>
+        </div>
+        <div class="scard">
+          <div class="sp-logo">
+            <div class="logo-lai">Last Anvil<br>Innovations</div>
+            <div class="sp-tier-tag">Gold Sponsor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SILVER -->
+    <div class="tier-block reveal">
+      <div class="tier-header">
+        <span class="tier-pill silver">Silver Sponsors</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sponsors-row">
+        <div class="scard">
+          <div class="sp-logo">
+            <div class="logo-haas">Haas</div>
+            <div class="sp-tier-tag">Haas Automation · Silver Sponsor</div>
+          </div>
+        </div>
+        <div class="scard" style="opacity:0.4;border:1px dashed rgba(255,255,255,0.08)">
+          <div class="sp-logo">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);opacity:0.6">Your Logo Here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRONZE -->
+    <div class="tier-block reveal">
+      <div class="tier-header">
+        <span class="tier-pill bronze">Bronze Sponsors</span>
+        <div class="tier-rule"></div>
+      </div>
+      <div class="sponsors-row">
+        <div class="scard">
+          <div class="sp-logo">
+            <div class="logo-lb">Loaded Boards</div>
+            <div class="sp-tier-tag">Bronze Sponsor</div>
+          </div>
+        </div>
+        <div class="scard" style="opacity:0.4;border:1px dashed rgba(255,255,255,0.08)">
+          <div class="sp-logo">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);opacity:0.6">Your Logo Here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BECOME A SPONSOR -->
+<div class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Get Involved</p>
+      <h2 class="sh">Become a <span class="r">Partner.</span></h2>
+    </div>
+    <br>
+    <div class="become-grid reveal">
+      <div class="become-text">
+        <p>Sponsoring Team 7415 is an investment in the next generation of engineers, programmers, and innovators. Your support directly funds robot components, competition registration, travel, and student development.</p>
+        <p>In return, sponsors receive recognition on our robot, pit, team apparel, and website — reaching students, families, educators, and the broader FIRST community at every event.</p>
+        <br>
+        <a href="contact.html" class="btn btn-red">Contact Us About Sponsoring</a>
+      </div>
+      <div class="tier-list">
+        <div class="tier-row"><div class="tier-dot founding"></div><div><div class="tier-row-name">Founding Sponsor</div><div class="tier-row-desc">Maximum recognition — exclusive primary partner status, robot placement, and all benefits</div></div></div>
+        <div class="tier-row"><div class="tier-dot gold"></div><div><div class="tier-row-name">Gold Sponsor</div><div class="tier-row-desc">Prominent recognition on robot, pit display, apparel, and website</div></div></div>
+        <div class="tier-row"><div class="tier-dot silver"></div><div><div class="tier-row-name">Silver Sponsor</div><div class="tier-row-desc">Recognition on website, pit display, and team materials</div></div></div>
+        <div class="tier-row"><div class="tier-dot bronze"></div><div><div class="tier-row-name">Bronze Sponsor</div><div class="tier-row-desc">Website recognition and team appreciation</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+</body>
+</html>

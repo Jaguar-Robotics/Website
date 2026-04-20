@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>About | Team 7415 Jaguar Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-grid { display:grid; grid-template-columns:1.1fr 0.9fr; gap:5rem; align-items:start; padding-top:3.5rem; }
+    .about-body p { color:var(--silver); line-height:1.85; font-size:1rem; margin-bottom:1.1rem; }
+    .about-body strong { color:var(--white); }
+    .anvil-badge { display:inline-flex; align-items:center; gap:0.75rem; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); padding:0.7rem 1.1rem; margin-top:1.2rem; }
+    .anvil-icon { font-size:1.3rem; }
+    .anvil-text { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.88rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--silver-light); line-height:1.2; }
+    .anvil-text small { display:block; font-weight:400; font-size:0.73rem; color:var(--silver); text-transform:none; }
+    .subteams { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .subteam { background:var(--dark); padding:1.6rem; transition:background 0.2s; }
+    .subteam:hover { background:var(--surface2); }
+    .sub-icon { font-size:1.5rem; margin-bottom:0.5rem; }
+    .sub-name { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); margin-bottom:0.3rem; }
+    .sub-desc { font-size:0.82rem; color:var(--silver); line-height:1.55; }
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:2.5rem; }
+    .vcard { background:var(--dark); padding:2rem 1.6rem; }
+    .v-num { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2.5rem; color:var(--red-bright); line-height:1; opacity:0.35; margin-bottom:0.5rem; }
+    .v-title { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.05rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
+    .v-desc { font-size:0.83rem; color:var(--silver); line-height:1.6; }
+    .logo-showcase { display:flex; align-items:center; justify-content:center; padding:3rem; background:var(--surface2); border:1px solid var(--line); margin-top:3.5rem; }
+    .logo-showcase img { max-width:420px; width:100%; height:auto; }
+    @media (max-width:900px) {
+      .about-grid { grid-template-columns:1fr; gap:3rem; }
+      .values-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-header">
+  <p class="eyebrow">Who We Are</p>
+  <h1>About the<br><span class="r">Jaguars.</span></h1>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <h2 class="sh">Our <span class="r">Story.</span></h2>
+        <br>
+        <div class="about-body">
+          <p>Team 7415 Jaguar Robotics is the FIRST Robotics Competition team of deToledo High School in West Hills, California. Founded to bring competitive robotics to deToledo students, we've grown into a team that competes and earns recognition across Southern California.</p>
+          <p>Every January, we receive the game challenge at kickoff and have exactly six weeks to design, fabricate, wire, and program a fully functional competition robot from scratch — mirroring real-world engineering workflows under intense time pressure.</p>
+          <p>Our team is entirely student-led, supported by dedicated mentors from industry and academia. We don't just build robots — we build engineers, problem-solvers, and future leaders.</p>
+          <p>We are a proud member of <strong>Team Anvil</strong>, a Southern California FRC alliance promoting collaboration, knowledge-sharing, and community growth across regional teams.</p>
+          <div class="anvil-badge">
+            <div class="anvil-icon">⚒️</div>
+            <div class="anvil-text">Team Anvil Member<small>Southern California FRC Collaboration Alliance</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="subteams reveal">
+        <div class="subteam"><div class="sub-icon">⚙️</div><div class="sub-name">Mechanical</div><div class="sub-desc">CAD modeling, fabrication, prototyping, and mechanism design using professional tools.</div></div>
+        <div class="subteam"><div class="sub-icon">💻</div><div class="sub-name">Software</div><div class="sub-desc">Java robot control, swerve drive, autonomous navigation, computer vision, and custom tooling.</div></div>
+        <div class="subteam"><div class="sub-icon">🔌</div><div class="sub-name">Electrical</div><div class="sub-desc">Full robot wiring, motor controllers, sensors, pneumatics, and power distribution.</div></div>
+        <div class="subteam"><div class="sub-icon">📣</div><div class="sub-name">Outreach</div><div class="sub-desc">STEM education events, community demos, and inspiring future engineers.</div></div>
+      </div>
+    </div>
+
+    <!-- Team logo showcase -->
+    <div class="logo-showcase reveal">
+      <img src="logo.jpg" alt="Team 7415 Jaguar Robotics — Sponsored by FEIT Electric" />
+    </div>
+  </div>
+</div>
+
+<div class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">What We Stand For</p>
+      <h2 class="sh">Our <span class="r">Values.</span></h2>
+    </div>
+    <div class="values-grid reveal">
+      <div class="vcard"><div class="v-num">01</div><div class="v-title">Excellence</div><div class="v-desc">We hold ourselves to the highest standard in robot design, code quality, teamwork, and competition conduct.</div></div>
+      <div class="vcard"><div class="v-num">02</div><div class="v-title">Gracious Professionalism</div><div class="v-desc">We compete hard and help others. FIRST's core value of gracious professionalism shapes how we show up at every event.</div></div>
+      <div class="vcard"><div class="v-num">03</div><div class="v-title">Collaboration</div><div class="v-desc">From our own subteams to the Team Anvil alliance, we believe the best outcomes come from working together.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">The Program</p>
+      <h2 class="sh">About <span class="r">FIRST.</span></h2>
+    </div>
+    <br>
+    <div style="max-width:680px" class="reveal">
+      <p style="color:var(--silver);line-height:1.85;font-size:1rem;margin-bottom:1rem">FIRST (For Inspiration and Recognition of Science and Technology) is a non-profit organization founded by Dean Kamen to inspire young people to pursue careers in STEM.</p>
+      <p style="color:var(--silver);line-height:1.85;font-size:1rem;margin-bottom:1.5rem">The FIRST Robotics Competition is the flagship high school program, challenging teams to design and build robots for a new game challenge every year. With over 3,800 teams worldwide, it is one of the most prestigious high school robotics competitions on the planet.</p>
+      <a href="https://www.firstinspires.org" target="_blank" class="btn btn-ghost">Learn More About FIRST →</a>
+    </div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+</body>
+</html>
