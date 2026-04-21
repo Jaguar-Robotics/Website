@@ -26,7 +26,7 @@ const FOOTER_HTML = `
     <div class="footer-top">
       <div>
         <a href="index.html">
-          <img src="logo.png" alt="Team 7415" class="footer-logo-img" onerror="this.outerHTML='<span style=\\'font-family:Barlow Condensed,sans-serif;font-weight:900;font-size:1.2rem;color:#B02233\\'>7415 JAGUAR ROBOTICS</span>'">
+          <img src="logo.jpg" alt="Team 7415" class="footer-logo-img" onerror="this.outerHTML='<span style=\\'font-family:Barlow Condensed,sans-serif;font-weight:900;font-size:1.2rem;color:#B02233\\'>7415 JAGUAR ROBOTICS</span>'">
         </a>
         <p class="footer-tagline">deToledo High School · West Hills, CA<br>Member of Team Anvil ⚒️</p>
         <div class="footer-socials">
