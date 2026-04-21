@@ -5,10 +5,9 @@ const TEAM_LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 
 const NAV_HTML = `
 <nav id="mainNav">
   <a href="index.html" class="nav-left" aria-label="Team 7415 Home">
-    <img src="logo.png" alt="7415 Jaguar Robotics" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-    <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;color:#B02233;letter-spacing:-0.01em">7415</span>
+    <span class="nav-num">7415</span>
     <div class="nav-sep"></div>
-    <span class="nav-name">Jaguar Robotics</span>
+    <span class="nav-name">Jaguar Robotics Sponsored By Feit Electric</span>
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
