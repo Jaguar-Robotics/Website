@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Mechanical | Team 7415 Jaguar Robotics</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    body, * { font-family: 'Nunito Sans', 'Frutiger', 'Trebuchet MS', Arial, sans-serif !important; }
+    h1,h2,h3,.sh,.eyebrow,.page-header h1 { font-weight:800 !important; }
+    
+    .feature-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:2.5rem; }
+    .feature-card { background:var(--dark); padding:2rem; transition:background 0.2s; }
+    .feature-card:hover { background:var(--surface2); }
+    .fc-icon { font-size:2rem; margin-bottom:0.75rem; }
+    .fc-title { font-weight:800; font-size:1rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); margin-bottom:0.4rem; }
+    .fc-desc { font-size:0.85rem; color:var(--silver); line-height:1.65; }
+    .tools-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:1rem; }
+    .tool-chip { background:var(--dark); padding:1rem 1.2rem; display:flex; align-items:center; gap:0.75rem; transition:background 0.2s; }
+    .tool-chip:hover { background:var(--surface2); }
+    .tc-icon { font-size:1.2rem; flex-shrink:0; }
+    .tc-name { font-weight:800; font-size:0.85rem; letter-spacing:0.04em; color:var(--white); }
+    .tc-desc { font-size:0.75rem; color:var(--silver); margin-top:0.1rem; }
+    .highlight-bar { background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--red-bright); padding:1.2rem 1.5rem; margin-top:1.5rem; }
+    .highlight-bar p { color:var(--silver); font-size:0.9rem; line-height:1.7; }
+    .highlight-bar strong { color:var(--white); }
+    .back-link { display:inline-flex; align-items:center; gap:0.5rem; font-weight:800; font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--silver); text-decoration:none; margin-bottom:2rem; transition:color 0.2s; }
+    .back-link:hover { color:var(--red-bright); }
+    .others-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .other-card { background:var(--dark); padding:1.5rem; text-decoration:none; display:flex; align-items:center; gap:1rem; transition:background 0.2s; }
+    .other-card:hover { background:var(--surface2); }
+    .other-icon { font-size:1.5rem; flex-shrink:0; }
+    .other-name { font-weight:800; font-size:0.9rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); }
+    .other-tag { font-size:0.78rem; color:var(--silver); margin-top:0.15rem; }
+    @media (max-width:900px) { .feature-grid { grid-template-columns:1fr; } .tools-grid { grid-template-columns:1fr; } .others-grid { grid-template-columns:1fr; } }
+    .sub-banner {
+      margin-top:64px;
+      background:linear-gradient(135deg,rgba(140,26,40,0.18) 0%,transparent 60%);
+      border-bottom:1px solid var(--line);
+      padding:4rem 3rem 3rem;
+    }
+    .sub-icon-large { font-size:3.5rem; margin-bottom:1rem; display:block; }
+    .sub-hero-title { font-weight:900; font-size:clamp(3rem,6vw,5rem); line-height:0.9; text-transform:uppercase; margin-bottom:0.75rem; }
+    .sub-hero-title .r { color:var(--red-bright); }
+    .sub-tagline { font-size:1.1rem; color:var(--silver); margin-top:0.5rem; }
+    .two-col { display:grid; grid-template-columns:1.2fr 1fr; gap:5rem; align-items:start; }
+    @media (max-width:900px) { .two-col { grid-template-columns:1fr; gap:3rem; } .sub-banner { padding:3rem 1.5rem 2rem; } }
+  </style>
+</head>
+<body>
+
+<div class="sub-banner">
+  <div style="max-width:1200px;margin:0 auto">
+    <a href="about.html" class="back-link">← Back to About</a>
+    <span class="sub-icon-large">⚙️</span>
+    <h1 class="sub-hero-title"><span class="r">Mechanical</span><br>Subteam</h1>
+    <p class="sub-tagline">From CAD to competition hardware.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <div class="two-col reveal">
+      <div>
+        <p class="eyebrow">What We Do</p>
+        <h2 class="sh">Our <span class="r">Role.</span></h2>
+        <br>
+        <p style="color:var(--silver);line-height:1.85;font-size:1rem">The mechanical subteam is responsible for designing, prototyping, and building the physical robot. Every mechanism — from drivetrains to game-piece manipulators — starts here. We work in 6-week sprints under intense pressure, producing competition-ready hardware from raw materials.</p>
+        <div class="highlight-bar"><p>Our <strong>Haas Automation</strong> and <strong>Fabworks</strong> sponsorships give us access to professional-grade CNC machining and custom fabricated components — the same tools used in industry.</p></div>
+      </div>
+      <div>
+        <p class="eyebrow">Tools & Tech</p>
+        <div class="tools-grid">
+        <div class="tool-chip">
+          <div class="tc-icon">🖥️</div>
+          <div><div class="tc-name">Onshape / SolidWorks</div><div class="tc-desc">CAD platform</div></div>
+        </div>
+        <div class="tool-chip">
+          <div class="tc-icon">⚡</div>
+          <div><div class="tc-name">CNC Router</div><div class="tc-desc">Precision cutting</div></div>
+        </div>
+        <div class="tool-chip">
+          <div class="tc-icon">✂️</div>
+          <div><div class="tc-name">Laser Cutter</div><div class="tc-desc">Sheet metal & poly</div></div>
+        </div>
+        <div class="tool-chip">
+          <div class="tc-icon">🔩</div>
+          <div><div class="tc-name">Hand Tools</div><div class="tc-desc">Assembly & adjust</div></div>
+        </div>
+        <div class="tool-chip">
+          <div class="tc-icon">🏭</div>
+          <div><div class="tc-name">Haas CNC</div><div class="tc-desc">Sponsored machining</div></div>
+        </div>
+        <div class="tool-chip">
+          <div class="tc-icon">📦</div>
+          <div><div class="tc-name">Fabworks</div><div class="tc-desc">Custom fab parts</div></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Responsibilities</p>
+      <h2 class="sh">What We <span class="r">Build.</span></h2>
+    </div>
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <div class="fc-icon">📐</div>
+        <div class="fc-title">CAD Modeling</div>
+        <div class="fc-desc">Design every robot part in Onshape or SolidWorks before cutting a single piece of metal.</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">🔩</div>
+        <div class="fc-title">Fabrication</div>
+        <div class="fc-desc">CNC routing, laser cutting, hand tools, and assembly — we build everything in-house.</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">🧪</div>
+        <div class="fc-title">Prototyping</div>
+        <div class="fc-desc">Rapid iteration on mechanisms to find what works before committing to the final design.</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">🏗️</div>
+        <div class="fc-title">System Design</div>
+        <div class="fc-desc">Integrate subsystems — drivetrains, arms, intakes, climbers — into a coherent robot architecture.</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">🔧</div>
+        <div class="fc-title">Maintenance</div>
+        <div class="fc-desc">Keep the robot competition-ready through pit maintenance and on-the-fly repairs at events.</div>
+      </div>
+      <div class="feature-card">
+        <div class="fc-icon">📏</div>
+        <div class="fc-title">Documentation</div>
+        <div class="fc-desc">Maintain design records, BOMs, and assembly guides for future seasons.</div>
+      </div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="wrap reveal">
+    <p class="eyebrow">Other Subteams</p>
+    <h2 class="sh">Explore <span class="r">More.</span></h2>
+    <br>
+    <div class="others-grid"><a href="software.html" class="other-card"><div class="other-icon">💻</div><div><div class="other-name">Software</div><div class="other-tag">The brain behind the machine.</div></div></a><a href="electrical.html" class="other-card"><div class="other-icon">🔌</div><div><div class="other-name">Electrical</div><div class="other-tag">Powering every mechanism on the field.</div></div></a><a href="outreach.html" class="other-card"><div class="other-icon">📣</div><div><div class="other-name">Outreach</div><div class="other-tag">Inspiring the next generation.</div></div></a></div>
+  </div>
+</div>
+
+<script src="shared.js"></script>
+</body>
+</html>
