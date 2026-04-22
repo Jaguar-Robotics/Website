@@ -58,7 +58,7 @@ const FOOTER_HTML = `
         <ul>
           <li><a href="https://www.firstinspires.org" target="_blank">FIRST Robotics</a></li>
           <li><a href="https://www.thebluealliance.com/team/7415" target="_blank">The Blue Alliance</a></li>
-          <li><a href="https://www.detoledo.org" target="_blank">deToledo High School</a></li>
+          <li><a href="https://www.dths.org" target="_blank">deToledo High School</a></li>
         </ul>
       </div>
     </div>
